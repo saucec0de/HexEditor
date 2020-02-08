@@ -1,22 +1,21 @@
 <html>
-<body>
- 
-<div id="divMain"></div>
-  
-<script type="text/javascript" src="StringExtensions.js"></script>
-<script type="text/javascript" src="Converter.js" charset="UTF-8"></script>
-<script type="text/javascript" src="Globals.js"></script>
-<script type="text/javascript" src="Session.js"></script>
-<script type="text/javascript">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <body>
+        <div id="hexeditor"></div>
 
-function main()
-{
-    var session = new Session([]);
- 
+        <script type="text/javascript" src="StringExtensions.js"></script>
+        <script type="text/javascript" src="Converter.js" charset="UTF-8"></script>
+        <script type="text/javascript" src="Globals.js"></script>
+        <script type="text/javascript" src="Session.js"></script>
+        <script type="text/javascript">
+
+function main() {
+    var session = new Session("hexeditor",[]);
     Globals.Instance.initialize(session);
 }
 
 main();
-</script>
+        </script>
 
- 
+    </body>
