@@ -1,6 +1,7 @@
 HexEditor
 =========
 
-A simple hex editor in JavaScript.
+A simple hex editor in JavaScript (for my own purposes).
 
-![Screenshot](/Screenshots/HexEditor-Screenshot.png?raw=true "Screenshot")
+Original taken from: https://github.com/thiscouldbebetter/HexEditor
+
