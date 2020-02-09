@@ -55,7 +55,12 @@ function Converter() {
 
         for (var i = 0; i < bytes.length; i++) {
             var byte = bytes[i];
-            var byteAsCharASCII = String.fromCharCode(Converter.AsciiCharacters.codePointAt(byte)); 
+            var byteAsCharASCII;
+            if (byte==0x0a) {
+                byteAsCharASCII = "\n";
+            } else {
+                byteAsCharASCII = String.fromCharCode(Converter.AsciiCharacters.codePointAt(byte)); 
+            }
             returnValue += byteAsCharASCII;
         }
 
